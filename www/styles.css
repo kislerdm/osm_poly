@@ -1,0 +1,21 @@
+.skin-blue .main-header .logo {
+  background-color: #009C88;
+  font-color: "#F0FFFF";
+  font-size: 25px;
+  font-weight: bold;
+}
+.skin-blue .main-header .logo:hover {
+  background-color: #009C88;
+  font-color: "#F0FFFF";
+  font-size: 25px;
+  font-weight: bold;
+}
+#final_text {
+    text-align: center;
+}
+div.box-header {
+    text-align: center;
+    color: #fff;
+    background: #009C88;
+    background-color: #009C88;
+}
