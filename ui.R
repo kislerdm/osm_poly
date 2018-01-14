@@ -23,7 +23,9 @@ body <- dashboardBody(
                    leafletOutput(outputId = 'map', width = '100%', height = '780px')
                )
         ),
-        column(width = 12, tags$div(HTML(paste0(format(Sys.Date(), '%Y'), " © <a href='https://www.dkisler.de' target='blank_'>Dmitry Kisler</a>")), align = "center"))
+        column(width = 12, tags$div(HTML(paste0(format(Sys.Date(), '%Y'), " © <a href='https://www.dkisler.de' target='blank_'>Dmitry Kisler</a>",
+                                                "<br>See the code on <a href='https://github.com/kislerdm/osm_poly' target='blank_'>",
+                                              '<img title="GitHub" src="https://image.flaticon.com/icons/svg/24/24233.svg" width="20" height="20"/></a>')), align = "center"))
       )
     ), 
     id = 'page_body')
