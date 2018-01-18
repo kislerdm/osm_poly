@@ -4,10 +4,11 @@
 
 ## Page body
 body <- dashboardBody(
-  tags$head(tags$style(HTML(readLines('www/styles.css')))),
+  includeCSS('www/styles.css'),
   tags$div(  
     fluidPage(
       fluidRow(
+        useShinyjs(),
         column(width = 4, 
                box(width = NULL, solidHeader = T, title = NULL, collapsible = F, height = "800px", align = "center",
                    textInput('search', label = 'Address Search', placeholder = 'Address e.g. Hafencity, Hamburg, Germany', width = '100%', value = ''), 
